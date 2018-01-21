@@ -158,8 +158,8 @@ var cronSendJandi = function() {
 
 setInterval( cronSendJandi, 1000 * 0.5 );
 
-
 var methods = ["log"];//, "warn", "error"];
+var method;
 for ( var i = 0; i < methods.length; i++ ) {
 	method = methods[i];
     var oldMethod = console[method].bind(console);
